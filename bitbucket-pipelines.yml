@@ -13,4 +13,8 @@ pipelines:
         script: # Modify the commands below to build your repository.
          # - pip install -r requirements.txt
           - pip install django
+          - apt-get update -y 
+          - apt-get install -y git 
+          - echo "Hello" >> file.txt 
+          - git add . 
           - git push origin master
